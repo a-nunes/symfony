@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Read {{ title }}{% endblock %}
+{%  block body %}
+<h1> {{ title }}</h1>
+
+<div>
+    <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+    </p>
+    <p>
+        Suspendisse potenti. Integer pretium posuere quam, ac varius metus. Donec nec orci libero. Vestibulum egestas finibus nunc, eget interdum magna convallis et. Nunc gravida tristique sollicitudin. Donec egestas est congue, vehicula nulla sit amet, pulvinar ante. Nunc rutrum quam mauris, at convallis tellus volutpat vitae. Vestibulum tincidunt enim orci, malesuada facilisis magna dictum vel. Vivamus porttitor commodo magna, laoreet rutrum odio cursus ac. Quisque pulvinar ipsum nisi, ut tristique justo vehicula ut.
+    </p>
+    <p>
+        Phasellus lobortis augue eu tempor luctus. Morbi magna nisl, ultricies at tortor quis, ullamcorper sagittis ex. Nam pharetra eleifend est a porttitor. Quisque at quam ut dui mattis hendrerit ac ut metus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis at arcu lobortis, rhoncus orci in, mattis lectus. Ut cursus, felis ac venenatis aliquet, erat ante ullamcorper ante, vel vulputate eros sapien et mi. Integer non laoreet ligula. Nunc nec lacus quis lorem consectetur viverra. Integer placerat turpis placerat ornare vulputate. Sed at tellus a urna elementum pretium quis eu magna. Mauris iaculis id ante a volutpat. Sed vitae ultricies mauris. Praesent commodo eu velit vel pharetra.
+    </p>
+</div>
+
+<h2>Comments ({{ comments|length }})</h2>
+
+<ul>
+    {% for comment in comments %}
+        <li>{{ comment }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}
