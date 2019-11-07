@@ -29,6 +29,7 @@ class ArticleController extends AbstractController
             'I\'ll never eat every flavor beans again.'
         ];
 
+        dump($slug, $this);
         return $this->render('article/show.html.twig',[
             'title' => ucwords(str_replace('-',' ',$slug)),
             'comments' => $comments,
